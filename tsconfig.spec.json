@@ -1,0 +1,30 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "strict": false,
+    "allowJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    "noImplicitThis": true,
+    // "isolatedModules": true,
+    "esModuleInterop": true,
+
+    "types": ["node", "jest"],
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"],
+      "#app": ["node_modules/nuxt3/dist/app"],
+      "~": ["src"],
+      "~/*": ["src/*"]
+    }
+  }
+}
